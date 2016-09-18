@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+  head
+    title To Do
+    include _include/jquery.jade
+    include _include/bootstrap.jade
+
+      link(type="text/css",href="css/index.css",rel="stylesheet")
+      script(type="text/javascript",src="js/index.js")
+      <!-- shit -->
+    body
+      div.container
+        div.row
+          div.col-md-4.col-md-offset-4
+            input#input
+            button#add Add
+            ul#list
