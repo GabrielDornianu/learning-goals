@@ -1,0 +1,33 @@
+{
+  "name": "to-do",
+  "version": "1.0.0",
+  "description": "To Do Static List",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^2.3.2"
+  },
+  "devDependencies": {
+    "gulp-connect": "^5.0.0",
+    "gulp-ignore": "^2.0.1",
+    "gulp-livereload": "^3.8.1"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/micumatei/to-do.git"
+  },
+  "keywords": [
+    "to-do",
+    "test"
+  ],
+  "author": "Micu Matei-Marius, Dorneanu Gabriel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/micumatei/to-do/issues"
+  },
+  "homepage": "https://github.com/micumatei/to-do#readme"
+}
