@@ -41,10 +41,10 @@ class App(object):
             print(App.get_fib(self._args.n))
 
     @staticmethod
-    def get_fib(n):
+    def get_fib(number):
         """Generate `n` Fibonacci numbers."""
         buff = [1, 1]
-        for i in range(2, n):
+        for i in range(2, number):
             buff.append(buff[i-1]+buff[i-2])
 
         return buff
