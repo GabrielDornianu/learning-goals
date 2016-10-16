@@ -7,7 +7,6 @@ from __future__ import print_function
 
 import argparse
 import decimal
-import math
 import sys
 
 
@@ -45,6 +44,7 @@ class App(object):
 
     @staticmethod
     def warning(accuracy):
+        """Display warning if accuracy is too high."""
         if accuracy > 20:
             print("WARNING: It may take some time!")
 
