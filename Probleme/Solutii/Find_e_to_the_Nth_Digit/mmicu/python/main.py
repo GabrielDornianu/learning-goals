@@ -6,8 +6,11 @@ up to that many decimal places.
 from __future__ import print_function
 
 import argparse
+
 import decimal
+
 import functools
+
 import sys
 
 
@@ -26,8 +29,6 @@ class App(object):
         self.prepare_parser()
 
     def prepare_parser(self):
-        """Prepare Argument Parser."""
-        self._argparse.add_argument(
             "accuracy", type=int, help="Number of decimal places.")
 
     def run(self):
@@ -45,20 +46,17 @@ class App(object):
 
     @staticmethod
     def warning(accuracy):
-        """Print some warning if the computing will take a lot of time."""
         if accuracy > 20:
             print("WARNING: It may take some time!")
 
     @staticmethod
     def factorial(item):
-        """Retrun factorial of item."""
         if not item:
             return 1
         return functools.reduce(lambda x, y: x*y, range(1, item+1), 1)
 
     @staticmethod
     def get_e(accuracy):
-        """Get e calculated up to `accuracy` decimal places."""
         decimal.getcontext().prec = App._MAX_ACCURACY
 
         start = decimal.Decimal(1)
